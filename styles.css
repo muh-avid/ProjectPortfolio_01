@@ -48,9 +48,16 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* .about-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+} */
+
 /* Main content styles */
 main {
     padding: 2rem 0;
+    background-color:#f5f5dc;
 }
 
 section {
@@ -60,6 +67,7 @@ section {
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 /* About section */

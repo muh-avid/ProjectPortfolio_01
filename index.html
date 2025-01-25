@@ -71,29 +71,46 @@
         
         <section id="projects">
             <div class="container">
-                <h2>My Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                        <h3>Project 1</h3>
-                        <p>A brief description of your first project. Highlight the key features and technologies used.</p>
-                        <a href="#" class="button">View Project</a>
-                    </div>
-                    <!-- <div class="project-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Project 2">
-                        <h3>Project 2</h3>
-                        <p>Description of your second project. Mention the problem it solves and your role in its development.</p>
-                        <a href="#" class="button">View Project</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                        <h3>Project 3</h3>
-                        <p>Details about your third project. Explain its significance and any challenges you overcame.</p>
-                        <a href="#" class="button">View Project</a>
-                    </div> -->
-                </div>
+            <h2>My Projects</h2>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Dynamic project cards will be inserted here by JavaScript -->
+            </div>
             </div>
         </section>
+
+        <script>
+            const projects = [
+            {
+                title: "Project 1",
+                description: "A brief description of your first project. Highlight the key features and technologies used.",
+                imageUrl: "https://via.placeholder.com/300x200",
+                link: "#"
+            },
+            {
+                title: "Project 2",
+                description: "A brief description of your second project. Highlight the key features and technologies used.",
+                imageUrl: "https://via.placeholder.com/300x200",
+                link: "#"
+            }
+            // Add more projects as needed
+            ];
+
+            const projectsGrid = document.getElementById('projects-grid');
+
+            projects.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.classList.add('project-card');
+
+            projectCard.innerHTML = `
+                <img src="${project.imageUrl}" alt="${project.title}">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <a href="${project.link}" class="button">View Project</a>
+            `;
+
+            projectsGrid.appendChild(projectCard);
+            });
+        </script>
 
         <section id="contact">
             <div class="container">
