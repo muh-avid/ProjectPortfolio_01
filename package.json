@@ -1,0 +1,15 @@
+{
+  "name": "projectportfolio_01",
+  "version": "1.0.0",
+  "description": "Saya senang memberikan penjelasan yang lebih rinci tentang proyek portofolio ini, terutama karena Anda masih belajar. Mari kita uraikan lebih lanjut:",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  }
+}
