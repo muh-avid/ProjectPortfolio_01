@@ -5,14 +5,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AVID-Portfolio">
     <meta name="keyword" content="tailwindcss, CSS, tailwind">
+    <meta name="author" content="Avid">
     <title>AVID-Portfolio</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="output.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <style>
+        .gradient {
+            background-image: linear-gradient(to bottom right, #e2da97, #000000);
+        }
+    </style>
 </head>
 <body>
-    <section class="w-screen mx-auto px-4 h-32">Navigasi bar</section>
-    <section class="w-screen mx-auto px-4 bg-pink-500 md:bg-indigo-700 h-32">About me</section>
+    <section class="w-screen mx-auto px-4">
+        <nav class="flex flex-wrap p-6 justify-between">
+            <div class="flex flex-shrink-0 mr-6">
+                <img src="img/logo.png" class="h-10 w-50 mr-2">
+            </div>
+            <div class="block lg:hidden">
+                <a class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
+                  <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </a>
+           </div>  
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                    About
+                </a>
+                <a href="#recent" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                    Recent work
+                </a>
+                <a href="#skill" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                    Framework skill
+                </a>
+                <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">
+                    COntact me
+                </a>
+            </div>
+            <div>
+                <a href="#" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0 hi">
+                Contact me
+                </a>
+            </div>
+        </nav>
+    </section>
+<!-- section about -->
+    <section class="w-screen mx-auto px-4 gradient">
+        <div class="px-16 py-8">
+            <h1 class="w-full text-5xl font-bold text-center text-white">About me</h1>
+            <div class="mb-4">
+                <div class="bg-black w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto">
+                </div>
+                <h2 class="text-3xl font-bold mb-2 text-white text-center">
+                    Hai, Saya Avid. seorang web developer
+                </h2>
+                <h3 class="text-lg mb-2 text-white text-center">
+                    Saya seorang programmer dan juga akuntan, selain dapat membuat aplikasi berbasis web, saya juga dapat membuat laporan keuangan dan analisis data. yang sekiranya dibutuhkan user.
+                </h3>
+                <div class="w-full">
+                    <div class="px-4 py-4">
+                        <img src="img/baby.jpg" 
+                             class="shadow-lg rounded-full max-w-full mx-auto text-center w-48" 
+                             alt="img_profile">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
+                <div class="p-4 text-center">
+                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 md:bg-red-500 hover:bg-blue-700  text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">
+                        Lihat Portfolio
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-pencil-ruler text-red-500 fa-5x mb-6"></i>
+                <div class="p-4 text-center">
+                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 md:bg-red-500 hover:bg-blue-700  text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">
+                        Lihat Portfolio
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
+                <i class="fas fa-database text-green-500 fa-5x mb-6"></i>
+                <div class="p-4 text-center">
+                    <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                    <p class="text-gray-600 text-base mb-2">?</p>
+                    <hr class="text-gray-600 mb-2">
+                </div>
+                <div class="px-2 py-4">
+                    <button class="bg-blue-500 md:bg-red-500 hover:bg-blue-700  text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">
+                        Lihat Portfolio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="w-screen mx-auto px-4 bg-white h-32">Skill</section>
     <section class="w-screen mx-auto px-4 bg-gray-300 h-32">Recent work</section>
     <section class="w-screen mx-auto px-4 bg-indigo-700 h-32">Contact me</section>
