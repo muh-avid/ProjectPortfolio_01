@@ -1,0 +1,10 @@
+
+.gradient {
+    background-image: linear-gradient(to bottom right, #e2da97, #000000);
+}
+.gradient-skill {
+    background-image: linear-gradient(to right, #e2da97, #000000);
+}
+.gradient-bottom {
+    background-image: linear-gradient(to bottom right, #000000, #e2da97);
+}
