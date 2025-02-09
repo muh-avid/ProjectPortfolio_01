@@ -14,9 +14,13 @@ a.links_navbar:hover {
 }
 
 header {
-    position: relative;
-    padding: 0 2rem;
+    position: fixed; /* Membuat header tetap di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #000000;
+    z-index: 1000; /* Supaya navbar selalu di atas elemen lain */
+    padding: 0 2rem;
 }
 
 .navbar {
@@ -27,7 +31,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px 20px;
 }
+
+body {
+    padding-top: 40px; /* Agar konten tidak tertutup navbar */
+}
+
 
 .navbar_logo-link {
     font-size: 1.5rem;
