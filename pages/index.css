@@ -38,6 +38,34 @@ body {
     padding-top: 40px; /* Agar konten tidak tertutup navbar */
 }
 
+.about__div {
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    
+    
+}
+
+@media screen and (max-width: 375px) {
+    .about__div {
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    
+}
+    
+
+.about__text {
+    display: flex;
+}
+
+@media screen and (max-width: 375px) {
+    .about__text {
+        flex-direction: column;
+        font-size: 14px;
+    }
+    
+}
 
 .navbar_logo-link {
     font-size: 1.5rem;
